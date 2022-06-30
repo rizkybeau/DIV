@@ -1,0 +1,38 @@
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.cards {
+  max-width: 355px;
+  width: 100%;
+  height: 600px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(212, 249, 0, 0.518);
+  border-radius: 20px;
+}
+.featured {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+@media (max-width: 600px) {
+  .featured {
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 30px;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .featured {
+    overflow-x: auto;
+  }
+}
